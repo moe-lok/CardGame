@@ -50,8 +50,8 @@ namespace CardGame
             ShuffleDeck();
             Thread.Sleep(1000);
 
-            // Add dealing animation
-            DealingAnimation.AnimateDealing(players, deck.Count);
+            // Pass the deck to the animation
+            DealingAnimation.AnimateDealing(players, deck);
             DealCards();
 
             Console.WriteLine("\nPress any key to continue...");
